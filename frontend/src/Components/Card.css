@@ -1,0 +1,47 @@
+@keyframes revealContent {
+    0% {
+        opacity: 0;
+        max-height: 0;
+    }
+    100% {
+        opacity: 1;
+        max-height: 1000px; /* Set a sufficiently large value or adjust as needed */
+    }
+}
+.mouseover {
+    overflow: hidden;
+    animation: revealContent 1.5s ease-in-out forwards; /* Adjust the duration as needed */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for initial state */
+    max-height: 0;
+    opacity: 0;
+    border-top-color: transparent;
+    border-radius: 20px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+}
+
+.mouseover:hover {
+    max-height: 1000px; /* Adjust as needed */
+    opacity: 1;
+}
+
+@keyframes revealFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .bottom-to-top-content {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .bottom-to-top-content.open {
+    animation: revealFromBottom 0.5s ease-in-out forwards;
+  }

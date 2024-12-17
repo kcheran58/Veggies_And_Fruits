@@ -1,0 +1,63 @@
+/* ProfileDialog.css */
+
+.dim-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1; /* Ensure the overlay is on top */
+  }
+  
+  .dialog-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    display: flex;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensure the dialog box is above the dim overlay */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dialog-box {
+    color: black;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    align-content: center;
+  }
+  
+  .dialog-box h2 {
+    margin-bottom: 15px;
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .profile-table {
+    margin: 15px 0;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .profile-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .profile-table td:first-child {
+    font-weight: bold;
+  }
+  

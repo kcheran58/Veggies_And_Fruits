@@ -1,0 +1,17 @@
+/* styles.css */
+.mobile-image {
+    height: 300px; /* Default height for mobile screens */
+  
+    /* Media query for larger screens */
+    @media only screen and (min-width: 601px) {
+      height: 500px; /* Adjust the height for larger screens */
+    }
+  }
+  
+  /* Media query for even larger screens */
+  @media only screen and (min-width: 1200px) {
+    .mobile-image {
+      height: 600px; /* Further adjust the height for even larger screens if needed */
+    }
+  }
+  

@@ -1,0 +1,56 @@
+##USERS
+POST  http://localhost:3500/users
+Content-Type: application/json
+
+{
+    "name": "uouir"
+}
+
+###
+GET  http://localhost:3500/users
+Content-Type: application/json
+{
+    
+}
+###
+get http://localhost:3500/user/kser58@gmail.com/12345678
+Content-Type: application/json
+
+
+###
+GET  http://localhost:3500/users/6697f07a160431fd7f7c01e2
+Content-Type: application/json
+
+###
+PUT  http://localhost:3500/users/6697efff160431fd7f7c01d3
+Content-Type: application/json
+
+{
+    "name": "John Doe Jr.",
+    "email": "johnjr@example.com",
+    "password":"1234567"
+}
+
+###
+DELETE  http://localhost:3500/users/6697efff160431fd7f7c01d3
+Content-Type: application/json
+
+
+##CRUD IN USERS PRODUCT
+
+###
+POST  http://localhost:3500/users/6697f07a160431fd7f7c01e2/cart/products
+Content-Type: application/json
+
+{
+    "productId":"6697ddc7b46db513c303c321"
+}
+
+###
+DELETE  http://localhost:3500/users/6697f07a160431fd7f7c01e2/cart/products/6697ddc7b46db513c303c321
+Content-Type: application/json
+
+##PRODUCTS
+###
+GET  http://localhost:3500/products
+Content-Type: application/json
